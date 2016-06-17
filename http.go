@@ -13,7 +13,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func to_roman(n int)  string {
-  m := map[int]string {1:"I", 2:"II", 3:"III"}
+  m := map[int]string {1:"I", 2:"II", 3:"III", 4:"IV", 5:"V", 6:"VI"}
   val, ok := m[x]
   if ok {
     return val
