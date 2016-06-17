@@ -23,7 +23,7 @@ func to_roman(n int)  string {
         return "III"
     }
     if n == 2 {
-        return "II"
+        return "III"
     }
     return "I"
 }
