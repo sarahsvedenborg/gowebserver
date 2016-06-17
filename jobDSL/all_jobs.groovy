@@ -19,7 +19,7 @@ job("${FIRST_JOB_NAME}") {
       }
       branch('master')
    
-      }
+      
     }
   }
   properties {
