@@ -13,20 +13,15 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func to_roman(n int)  string {
-    if n == 5 {
-	return "V"
-    }
-    if n == 4 {
-	return "IV"
-    }
-    if n == 3 {
-        return "III"
-    }
-    if n == 2 {
-        return "II"
-    }
-    return "I"
+  m := map[int]string {1:"I", 2:"II", 3:"III"}
+  val, ok := m[x]
+  if ok {
+    return val
+  } else {
+    return "CDIV: Roman not Found"
+  }
 }
+
 
 type romanGenerator int
 func (n romanGenerator) ServeHTTP(w http.ResponseWriter, r *http.Request) {
